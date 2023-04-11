@@ -1,2 +1,3 @@
 # RAndom-Nlp-CV-projects
-Various projects 
+
+ Various projects in NLP and CV
