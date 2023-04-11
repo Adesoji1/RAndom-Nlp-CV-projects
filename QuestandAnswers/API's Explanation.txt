@@ -1,0 +1,14 @@
+FastAPI code (backend.py):
+
+The FastAPI code creates a RESTful API with a single /predict endpoint. This endpoint accepts POST requests containing a JSON payload with the "question" and "passage" keys.
+When a request is received, it tokenizes the question and passage using the pretrained T5 tokenizer, combines them, and then feeds the tokenized input to the T5 model.
+The model generates an answer, which is then decoded back into text using the tokenizer.
+The API returns a JSON response containing the "answer" key with the generated answer as its value.
+
+Streamlit code (frontend.py):
+
+The Streamlit code creates a web interface for users to interact with the Q&A model.
+It displays a title, a text input field for the question, and a text area for the passage.
+When the user clicks the "Submit" button, it sends a POST request to the FastAPI backend with the question and passage as a JSON payload.
+The frontend then receives the JSON response from the backend, containing the generated answer.
+The answer is displayed on the Streamlit app interface.
