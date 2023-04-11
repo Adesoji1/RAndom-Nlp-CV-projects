@@ -12,3 +12,8 @@ It displays a title, a text input field for the question, and a text area for th
 When the user clicks the "Submit" button, it sends a POST request to the FastAPI backend with the question and passage as a JSON payload.
 The frontend then receives the JSON response from the backend, containing the generated answer.
 The answer is displayed on the Streamlit app interface.
+
+Used for git ignore
+# git filter-branch  -f --index-filter "git rm -r --cached --ignore-unmatch QuestandAnswers/t5-small-pytorch" HEAD  
+# git filter-branch  --index-filter "git rm -r --cached --ignore-unmatch QuestandAnswers/test_data.csv" HEAD
+#
